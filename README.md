@@ -1,6 +1,6 @@
 # Take Notes
 
-[![walkthrough video](./public/assets/images/screenshot.jpg)](https://watch.screencastify.com/v/Wc8JPcpfgMPFUpzFmwBu)
+![walkthrough video](./public/assets/images/screenshot.jpg)
 
 ## Description
 
