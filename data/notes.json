@@ -1,6 +1,9 @@
-[
+{
+  "notes": [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "title": "Welcome to Take Notes ",
+      "text": "1. Click the the \"+\" in the right corner to add a note. 2. Create your note and click the save button next to the \"+\". 3rd. Delete your note's by clicking the red trash can. ",
+      "id": "0"
     }
-]
+  ]
+}

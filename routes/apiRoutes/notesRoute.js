@@ -1,19 +1,18 @@
 const router = require("express").Router();
-const { filterByQuery, findById, createNewNotes, validateNotes} = require("../../lib/notes");
+const { findById, createNewNotes, validateNotes} = require("../../lib/notes");
 const { notes } = require("../../data/notes");
 
 router.get("/notes", (req, res) => {
   let results = notes;
-  if (req.query) {
-    results = filterByQuery(req.query, results);
-  }
   res.json(results);
 });
 
-router.get("/notes/:id", (req, res) => {
+router.delete("/notes/:id", (req, res) => {
   const result = findById(req.params.id, notes);
+
   if (result) {
-    res.json(result);
+	notes.splice(result, 1)
+    res.json(notes);
   } else {
     res.send(404);
   }
